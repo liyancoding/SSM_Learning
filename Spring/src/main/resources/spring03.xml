@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation=
+			   "http://www.springframework.org/schema/beans
+			   	http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/context
+				http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<!-- 设置自动扫描的包 -->
+	<!-- base-package：设置一个基础包，Spring会自动扫描该包及其子包下的组件 -->
+	<!-- resource-pattern：可以精确指定只扫描哪个子包下的类 -->
+	<!--<context:component-scan base-package="com.ly.spring.spring03"-->
+							<!--resource-pattern="dao/impl/*.class"/>-->
+
+	<context:component-scan base-package="com.ly.spring.spring03.t" use-default-filters="true">
+		<!--
+			子标签context:include-filter：用来设置只扫描哪个包下的类
+			如果type的值是annotation，那么expression的值是注解的全类名
+			如果type的值是assignable，那么expression的值是接口或者实现类的全类名
+		 -->
+
+		<!-- 如果想通过子标签context:include-filter来指定只扫描哪个包下的类，必须设置context:component-scan
+        标签中的use-default-filters属性为false -->
+		<!-- 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/> -->
+		<!-- 		<context:include-filter type="assignable" expression="com.ly.spring.spring03.service.UserService"/> -->
+
+		<!--
+			子标签context:exclude-filter：设置不扫描哪个包下的类
+		 -->
+		<!-- 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/> -->
+		<!-- 		<context:exclude-filter type="assignable" expression="com.ly.spring.spring03.service.impl.UserServiceImpl"/> -->
+	</context:component-scan>
+</beans>
