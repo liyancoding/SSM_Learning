@@ -55,58 +55,6 @@
 
     <dependencies>
 
-        <!-- 添加Spring依赖的jar包 -->
-        <!-- Beans包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>4.3.10.RELEASE</version>
-        </dependency>
-        <!-- Context包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>4.3.10.RELEASE</version>
-        </dependency>
-        <!-- Core包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>4.3.18.RELEASE</version>
-        </dependency>
-        <!-- 表达式包 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-expression</artifactId>
-            <version>4.3.10.RELEASE</version>
-        </dependency>
-
-        <!-- Spring Web -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>5.0.8.RELEASE</version>
-        </dependency>
-
-        <!-- Spring Web MVC -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>5.0.8.RELEASE</version>
-        </dependency>
-
-        <!-- AOP -->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjrt</artifactId>
-            <version>1.6.11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.8.10</version>
-        </dependency>
-
     </dependencies>
 
 </project>
