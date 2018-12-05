@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
  * @Modified By:
  */
 @Controller
-@RequestMapping("/handler")
+//@RequestMapping("/handler")
 public class SpringMVCHandler {
 
     public static final String SUCCESS = "success";
