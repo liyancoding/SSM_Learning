@@ -164,4 +164,22 @@ public class SpringMVCHandler1 {
         System.out.println("测试视图");
         return SUCCESS;
     }
+
+//    @RequestMapping("/testI18n")
+//	public String testI18n() {
+//		System.out.println("测试国际化");
+//		return "i18n";
+//	}
+
+    @RequestMapping("/testMyView")
+    public String testMyView() {
+        System.out.println("测试自定义视图");
+        return "myView";
+    }
+
+    @RequestMapping("/testRedirect")
+    public String testRedirect() {
+        System.out.println("测试重定向");
+        return "redirect:/redirect.jsp";
+    }
 }
