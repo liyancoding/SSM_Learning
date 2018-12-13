@@ -158,4 +158,10 @@ public class SpringMVCHandler1 {
         System.out.println("更新之后的用户的信息是：" + user);
         return SUCCESS;
     }
+
+    @RequestMapping("/testView")
+    public String testVies() {
+        System.out.println("测试视图");
+        return SUCCESS;
+    }
 }
