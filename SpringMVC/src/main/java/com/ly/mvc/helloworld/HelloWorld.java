@@ -17,4 +17,7 @@ public class HelloWorld {
         System.out.println("测试HelloWorld");
         return "helloworld";
     }
+    public static void main(String[] args){
+        System.out.println("这是使用mac之后第一次使用sourcetree上传到到github");
+    }
 }
